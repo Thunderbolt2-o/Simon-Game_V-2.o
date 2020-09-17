@@ -1,0 +1,103 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.btn:hover{
+    animation-name: button;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.mobKey-sty{
+font-family: 'Press Start 2P', cursive;
+background-color:#FEF2BF;
+padding: 20px;
+margin: 25px;
+border-radius: 25%;
+border: 3px solid;
+border-color: #ff4b5c;
+}
+.mobKey-sty:hover{
+  animation-name: button;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+}
+@keyframes button {
+  0%{
+  transform: rotateZ(0);
+  }
+  25%{
+  transform: rotateZ(20deg);
+  }
+  50%{
+    transform: rotateZ(-20deg);
+  }
+  100%{
+    transform: rotateZ(0);
+  }
+}
+
+.hide{
+  opacity: 0;
+}
+
+@media (max-width : 400px) {
+
+  .btn {
+    display: inline;
+    height:100px;
+    width: 100px;
+    border: 10px solid black;
+  }
+
+}
